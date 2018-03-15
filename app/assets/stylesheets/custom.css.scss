@@ -1,6 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* 共通 */
+
+h1{
+  text-align: center;
+}
+
+.btn{
+  margin-bottom: 10px;
+}
+
+.page-title{
+  padding-top: 100px;
+}
+
+/* ホーム画面 */
+
 .jumbotron{
   background-image: url(sea.JPG);
   background-repeat: no-repeat;
@@ -10,6 +26,17 @@
   text-align: center;
 }
 
+.main-title{
+  margin-top: 180px;
+}
+
+.signup-btn{
+  padding-top: 50px;
+  padding-bottom: 300px;
+}
+
+/* ヘッダー */
+
 #logo{
   font-size: 30px;
   float: left;
@@ -18,30 +45,14 @@
   padding-top: 3px;
 }
 
-.main-title{
-  margin-top: 150px;
-}
-
 .navbar{
   padding: 0px;
   margin: 0px;
 }
 
-.signup-btn{
-  margin-top: 100px;
-  margin-bottom: 400px;
-}
-
-h1, h2{
-  text-align: center;
-  margin-top: 100px;
-}
+/* フォーム */ 
 
 .actions{
   text-align: center;
-}
-
-.btn{
-  margin-bottom: 10px;
 }
 

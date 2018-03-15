@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-      <h2>マイプロフィール</h2>
+      <h1 class="page-title">マイプロフィール</h1>
         <%= link_to @user.name %>
         <%= @user.email %><br />
     </div>
     <div class="col-md-8">
-      <h2>投稿一覧</h2>
+      <h1 class="page-title">投稿一覧</h1>
       <% @microposts.each do |micropost| %>
       <%= micropost.content %><br />
       <% end %>

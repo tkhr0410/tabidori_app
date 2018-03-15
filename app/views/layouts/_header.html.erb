@@ -3,8 +3,11 @@
     <div class="container">
           <%= link_to "tabidori", root_path, id: "logo" %>
           <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "tabidoriとは", about_path %></li>
             <li><%= link_to "ホーム", root_path %></li>
             <li><%= link_to "マップ", map_path %></li>
+            <li><%= link_to "お問い合わせ", contact_path %></li>
+            <!--サインイン時-->
             <% if signed_in? %>
               <li><%= link_to "ユーザー", users_path %></li>
             <li class="dropdown">
@@ -21,6 +24,7 @@
               </ul>
             </li>
             <% else %>
+            <!--サインアウト時-->
               <li><%= link_to "ログイン", user_session_path %></li>
             <% end %>
           </ul>
