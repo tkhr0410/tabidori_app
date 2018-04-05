@@ -1,6 +1,6 @@
 <% if signed_in? %>
 <!--ログイン時-->
-
+<!--投稿フォーム-->
 <div class="container">
   <div class="row">
     <div class="col-md-4">
@@ -14,10 +14,13 @@
       </div>
       <% end %>
     </div>
+<!--投稿フィード-->
     <div class="col-md-4">
       <h1 class="page-title">投稿一覧</h2>
-      <%= current_user.name %>
-      <%= @micropost.content %>
+      <% @feed_items.each do |feed_item| %>
+      <%= link_to feed_item.user.name, feed_item.user %>
+      <%= feed_item.content %>
+      <% end %>
     </div>
   </div>
 </div>
@@ -30,9 +33,10 @@
     </div>
     <h3>〜旅行と空撮を繋げよう〜</h3>
     <p>（ポートフォリオサイト）<br/>
-    ただいま作成中です。。</p>
+    ただいま作成中です。</p>
     <div class="signup-btn">
       <%= link_to "新規登録", new_user_registration_path, class: "btn btn-lg btn-danger" %>
     </div>
   </div>
+<h1>tabidoriとは？</h1>
 <% end %>
