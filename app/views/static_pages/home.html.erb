@@ -38,5 +38,35 @@
       <%= link_to "新規登録", new_user_registration_path, class: "btn btn-lg btn-danger" %>
     </div>
   </div>
-<h1>tabidoriとは？</h1>
+<div class="media-list">
+  <h2 class="theme">tabiのテーマから探す</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <%= link_to image_tag("kouyou.jpg", :width => "100%", :height => "300px") %>
+      <h3>自然</h3>
+    </div>
+    <div class="col-md-4">
+      <%= link_to image_tag("hanabi.jpg", :width => "100%", :height => "300px") %>
+      <h3>花火</h3>
+    </div>
+    <div class="col-md-4">
+      <%= link_to image_tag("kouritou.jpg", :width => "100%", :height => "300px") %>
+      <h3>リゾート</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <%= link_to image_tag("mati.jpg", :width => "100%", :height => "300px") %>
+      <h3>街並み</h3>
+    </div>
+    <div class="col-md-4">
+      <%= link_to image_tag("kaigai.jpg", :width => "100%", :height => "300px") %>
+      <h3>海外</h3>
+    </div>
+    <div class="col-md-4">
+      <%= link_to image_tag("yakei.jpg", :width => "100%", :height => "300px") %>
+      <h3>夜景</h3>
+    </div>
+  </div>
+</div>
 <% end %>
